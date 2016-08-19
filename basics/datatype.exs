@@ -12,8 +12,7 @@ nil, true, false
 ModuleName
 
 # Binaries (and Strings)
-"Hello"
-#<<104, 101, 108, 108, 111>>
+#'hello' == <<104, 101, 108, 108, 111>>
 
 # Maps
 episode = %{
