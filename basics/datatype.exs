@@ -24,6 +24,11 @@ episode = %{
 {"Anthony", 37}
 {:ok, "The persona was created."}
 
+me = {"Anthony", 37}
+
+#elem(me, 0) => "Anthony"
+#elem(me, 1) => 37
+
 # Lists
 [1, 2, 3, 4]
 
