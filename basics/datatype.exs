@@ -56,3 +56,12 @@ end
 
 # Regular Expressions
 ~r/pattern/
+
+# Keyword Lists
+#[{:atom, value}, ...]
+
+# Structs
+#%{__struct__: ModuleName, ...}
+
+# Ranges
+# %Range{first: number, last: number}
