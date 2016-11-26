@@ -1,2 +1,0 @@
-defmodule Streamers do
-end
