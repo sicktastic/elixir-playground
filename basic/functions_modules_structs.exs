@@ -37,5 +37,4 @@ defmodule Math do
   end
 end
 
-IO.puts Math.Division.divide(15, 5)
-
+IO.puts Math.Division.divide(100, 2)
