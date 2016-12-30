@@ -12,12 +12,22 @@ defmodule MyList do
   # end
 
   # Example 2
-  def each([], _fun) do
-    :ok
+  # def each([], _fun) do
+  #   :ok
+  # end
+
+  # def each([h|t], fun) do
+  #   fun.(h)
+  #   each(t, fun)
+  # end
+
+  # Example 3
+
+  def map(list, fun) do
+    do_map(list, fun, [])
   end
 
-  def each([h|t], fun) do
-    fun.(h)
-    each(t, fun)
+  defp do_map([], _fun, acc) do
+    :lists.reverse(acc)
   end
 end
