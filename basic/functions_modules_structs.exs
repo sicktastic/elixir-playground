@@ -39,18 +39,37 @@
 
 # IO.puts Math.Division.divide(100, 2)
 
-@doc """
-Adds two integers together.
+# def add(a, b) do
+#   a + b
+# end
 
-## Examples
-    add(1, 2)
-    3
+# defmodule User do
+#   defstruct name: nil, email: nil
+# end
 
-    add(5, 5)
-    10
-"""
+# %User{}
+# %User{name: "Anthony"} # => {__struct__: User, name: "Anthony", email: nil}
 
-def add(a, b) do
-  a + b
+# # Structs: Under the hood
+
+# defmodule User do
+#   def __struct__ do
+#     %{__struct__: User, name: "Anthony", email: nil}
+#   end
+# end
+
+defmodule User do
+  defstruct name: nil, email: nil
+
+  def first_name(user) do
+    user.name
+    |> String.split
+    |> List.first
+  end
+
+  def last_name(user) do
+    user.name
+    |> String.split
+    |> List.last
+  end
 end
-
