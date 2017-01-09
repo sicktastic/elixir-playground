@@ -21,8 +21,8 @@ defmodule User do
     "Anthony"
   """
   def first_name(user) do
-    user.name
-    |> split
+    user
+    |> get_names
     |> first
   end
 
@@ -40,8 +40,12 @@ defmodule User do
     "Lee"
   """
   def last_name(user) do
-    user.name
-    |> split
+    user
+    |> get_names
     |> last
+  end
+
+  defp get_names(user) do
+    split(user.name)
   end
 end
