@@ -29,12 +29,28 @@
 
 # modules can be nested:
 
-defmodule Math do
-  defmodule Division do
-    def divide(a, b) do
-      a / b
-    end
-  end
+# defmodule Math do
+#   defmodule Division do
+#     def divide(a, b) do
+#       a / b
+#     end
+#   end
+# end
+
+# IO.puts Math.Division.divide(100, 2)
+
+@doc """
+Adds two integers together.
+
+## Examples
+    add(1, 2)
+    3
+
+    add(5, 5)
+    10
+"""
+
+def add(a, b) do
+  a + b
 end
 
-IO.puts Math.Division.divide(100, 2)
